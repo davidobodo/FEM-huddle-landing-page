@@ -5,11 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Open+Sans">
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
   <style>
+
+    *{
+      margin:0;
+      padding: 0;
+
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    #wrapper{
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    header{
+      background-color: hsl(193, 100%, 96%);
+      background-image: url("images/bg-hero-desktop.svg");
+    }
+
+    
+
+    header div a {
+      cursor: pointer;
+      padding:0.8em 1em;
+      font-weight: 700;
+      border-radius: 300px;
+      display: inline-block;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #fff;
+      text-decoration: none;
+      width: 150px;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+      font-family: "Open Sans";
+    }
+
+    #header_inner{
+      padding:70px;
+    }
+
+    a.getStarted {
+      cursor: pointer;
+      padding:1em 1.3em;
+      font-weight: 700;
+      border-radius: 300px;
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      background-color: hsl(322, 100%, 66%);
+      text-decoration: none;
+      width: 150px;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+      font-family: "Open Sans";
+      width: 250px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    footer{
+      background-color: hsl(192, 100%, 9%);
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -17,106 +83,137 @@
   <div id=wrapper>
     
     <header>
-      <div>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-          <div>Try It Free</div>
-      </div>
-
-      <div>
-        <div>
-          <div>Build The Community Your Fans Will Love</div>
-          <div>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-           Create connections with your users as you engage in genuine discussion. 
-          </div>
-          <div>Get Started For Free
-          </div>
+       <div id="header_inner">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+              <div></div>
+              <div>Huddle</div>
+            </div>
+            <div><a href="#">Try It Free</a></div>
         </div>
-        <div></div>
+
+        <div style="display: flex;">
+          <div style="width: 650px;">
+            <h1>Build The Community Your Fans Will Love</h1>
+            <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+             Create connections with your users as you engage in genuine discussion.</p> 
+            <div ><a href="#" class="getStarted">Get Started For Free</a>
+            </div>
+          </div>
+          <div ><img src="images/illustration-mockups.svg" style="width: 650px;"></div>
+        </div>
+
       </div>
     </header>
 
-    <content>
+    <content style="display: flex;margin: 150px 70px 300px 70px;flex-direction:column;">
       
-        <div>
-          <div>
-            <div>Grow Together
+        <div id="growtogether" style="display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; margin-bottom: 50px;">
+            <div style="width: 650px;display: flex;flex-direction: column;
+            justify-content: center;padding:100px;">
+                
+                    <h3>Grow Together
+                    </h3>
+                    <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+                    Think of the insightful conversations you miss out on with a feedback form.
+                    </p>
+                
             </div>
-            <div>Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. </div>
-          </div>
-          <div></div>
+            <div style="width: 650px">
+                <div style="padding: 50px;">
+                  <img src="images/illustration-grow-together.svg" style="width: 100%;">
+                </div>
+            </div>
+      </div>
+
+
+  <div id="flowingconversations" style="display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px;margin-bottom: 50px;">
+
+            <div style="width: 650px">
+                <div style="padding: 50px 0 50px 100px;">
+                  <img src="images/illustration-flowing-conversation.svg" style="width: 100%;">
+                </div>
+            </div>
+            <div style="width: 650px;display: flex;flex-direction: column;
+            justify-content: center;padding:100px 50px 100px 220px;">
+                
+                    <h3>Flowing Conversations
+                    </h3>
+                    <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+             have just-in-time loading for a more natural flow.
+                    </p>
+                
+            </div>
+            
+      </div>
+
+
+
+        
+          
+
+
+
+        <div id="yourusers" style="display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px;margin-bottom: 50px;">
+            <div style="width: 650px;display: flex;flex-direction: column;
+            justify-content: center;padding:100px;">
+                
+                    <h3>Your Users
+                    </h3>
+                    <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
+                    This means, once signed in to your app, your users can start chatting immediately.
+                    </p>
+                
+            </div>
+            <div style="width: 650px">
+                <div style="padding: 50px;">
+                  <img src="images/illustration-your-users.svg" style="width: 100%;">
+                </div>
+            </div>
+
         </div>
 
-
-        <div>
-          <div></div>
-          <div>
-            <div>Flowing Conversations</div>
-            <div>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.</div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <div>Your Users</div>
-            <div>It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.</div>
-          </div>
-          <div></div>
-        </div>
-
-        <div>
-          <div>Ready To Build Your Community?</div>
-          <div>Get Started For Free</div>
+        <div style="box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px;">
+          <h1>Ready To Build Your Community?</h1>
+          <div ><a href="#" class="getStarted">Get Started For Free</a></div>
         </div>
 
     </content>
 
 
-    <footer></footer>
+    <footer>
 
-  </div>
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <footer>
-    <p class="attribution">
+      <div style="padding: 100px; display: flex;">
+        <div style="flex:2;">
+          <h1>Huddle</h1>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+  incididunt ut labore et dolore magna aliqua</div>
+          <div>+1-543-123-4567</div>
+          <div>example@huddle.com</div>
+        </div>
+        <div style="flex: 1;">
+          <div>About Us</div>
+          <div>What We Do</div>
+          <div>FAQ</div>
+        </div>
+        <div style="flex:1;">
+          <div>Career</div>
+          <div>Blog</div>
+          <div>Contact Us</div>
+        </div>
+        <div style="flex: 1;">
+          <div></div>
+          <div>&copy; Copyright 2018 Huddle. All rights reserved.</div>
+        </div>
+      </div>
+      
+      <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      </p>
+    </footer>
+
+  </div>    
+  
 </body>
 </html>
