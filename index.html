@@ -17,6 +17,18 @@
       padding: 0;
 
     }
+
+
+    @media only screen and (max-width: 1110px) {
+      
+
+        
+        }
+
+
+
+
+      }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -69,6 +81,22 @@
       width: 250px;
     }
 
+    .headerinfo{
+      padding-top: 95px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 650px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    header img{
+      width: 650px;
+    }
+
     p{
       font-size: 18px;
       font-family: 'Open Sans', sans-serif;
@@ -83,9 +111,67 @@
       font-size: 25px;
     }
 
+    content{
+      display: flex;margin: 150px 70px 30px 70px;flex-direction:column;
+    }
+
     footer{
       background-color: hsl(192, 100%, 9%);
       color: white;
+    }
+
+    footer p{color: #fff;}
+
+    footer a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .d-flex{
+      display: flex;
+    }
+
+    .content-boxes{
+      display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; margin-bottom: 50px;
+    }
+
+    .content-boxes-inner{
+      width: 650px;display: flex;flex-direction: column;
+                justify-content: center;padding:100px;
+    }
+
+    .j-content-btw{
+      justify-content: space-between;
+    }
+
+    #flowing-conversations{
+      width: 650px;display: flex;flex-direction: column;
+                  justify-content: center;padding:100px 50px 100px 220px;
+    }
+
+    #bottomcalltoaction{
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; width: 730px;text-align: center;padding: 60px; position: relative;left: 285px;top: 90px;background-color: white;
+    }
+
+    .links{
+      flex: 1; display: flex;
+        flex-direction: column;height: 130px;justify-content: space-between;
+    }
+
+    #ourinfo{
+      flex:2;display: flex; flex-direction: column;justify-content: space-between;
+    }
+
+    .socialmedia{
+      display: flex;justify-content: space-around;padding: 0 70px;
+    }
+
+    .copyright{
+      display: flex; justify-content: flex-end;margin:0 80px 80px 0
+    }
+
+    .w650{
+      width: 650;
     }
   </style>
 </head>
@@ -93,135 +179,124 @@
 
   <div id=wrapper>
     
-    <header>
-       <div id="header_inner">
-        <div style="display: flex; justify-content: space-between;">
-            <div>
-              <h1><i class="far fa-comment-dots"></i> Huddle</h1>
-            </div>
-            <div><a href="#">Try It Free</a></div>
-        </div>
+            <header>
+               <div id="header_inner">
+                <div class="d-flex j-content-btw">
+                    <h1><i class="far fa-comment-dots"></i> Huddle</h1>
+                    <div><a href="#">Try It Free</a></div>
+                </div>
 
-        <div style="display: flex;margin: 50px 0;">
-          <div style="width: 650px;padding-top: 95px;">
-            <h1 style="font-size: 50px; margin-bottom: 30px;">Build The Community Your Fans Will Love</h1>
-            <p style="margin-bottom: 30px;">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-             Create connections with your users as you engage in genuine discussion.</p> 
-            <div ><a href="#" class="getStarted">Get Started For Free</a>
-            </div>
-          </div>
-          <div ><img src="images/illustration-mockups.svg" style="width: 650px;"></div>
-        </div>
+                <div class="d-flex" style="margin: 50px 0;">
+                  <div class="headerinfo">
+                    <h1 style="font-size: 50px;">Build The Community Your Fans Will Love</h1>
+                    <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+                     Create connections with your users as you engage in genuine discussion.</p> 
+                    <div ><a href="#" class="getStarted">Get Started For Free</a>
+                    </div>
+                  </div>
+                  <div ><img src="images/illustration-mockups.svg"></div>
+                </div>
 
-      </div>
-    </header>
+              </div>
+            </header>
 
-    <content style="display: flex;margin: 150px 70px 30px 70px;flex-direction:column;">
+    <content>
       
-        <div id="growtogether" style="display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; margin-bottom: 50px;">
-            <div style="width: 650px;display: flex;flex-direction: column;
-            justify-content: center;padding:100px;">
-                
-                    <h3>Grow Together
-                    </h3>
-                    <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
-                    Think of the insightful conversations you miss out on with a feedback form.
-                    </p>
-                
-            </div>
-            <div style="width: 650px">
-                <div style="padding: 50px;">
-                  <img src="images/illustration-grow-together.svg" style="width: 100%;">
+            <div class="content-boxes">
+                <div class="content-boxes-inner">
+                    
+                        <h3>Grow Together
+                        </h3>
+                        <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+                        Think of the insightful conversations you miss out on with a feedback form.
+                        </p>
+                    
                 </div>
-            </div>
-      </div>
-
-
-  <div id="flowingconversations" style="display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px;margin-bottom: 50px;">
-
-            <div style="width: 650px">
-                <div style="padding: 50px 0 50px 100px;">
-                  <img src="images/illustration-flowing-conversation.svg" style="width: 100%;">
-                </div>
-            </div>
-            <div style="width: 650px;display: flex;flex-direction: column;
-            justify-content: center;padding:100px 50px 100px 220px;">
-                
-                    <h3>Flowing Conversations
-                    </h3>
-                    <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-             have just-in-time loading for a more natural flow.
-                    </p>
-                
-            </div>
-            
-      </div>
-
-
-
-        
-          
-
-
-
-        <div id="yourusers" style="display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px;margin-bottom: 50px;">
-            <div style="width: 650px;display: flex;flex-direction: column;
-            justify-content: center;padding:100px;">
-                
-                    <h3>Your Users
-                    </h3>
-                    <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
-                    This means, once signed in to your app, your users can start chatting immediately.
-                    </p>
-                
-            </div>
-            <div style="width: 650px">
-                <div style="padding: 50px;">
-                  <img src="images/illustration-your-users.svg" style="width: 100%;">
+                <div class="w650">
+                    <div style="padding: 50px;">
+                      <img src="images/illustration-grow-together.svg">
+                    </div>
                 </div>
             </div>
 
-        </div>
+
+             <div class="content-boxes">
+
+                  <div class="w650">
+                      <div style="padding: 50px 0 50px 100px;">
+                        <img src="images/illustration-flowing-conversation.svg">
+                      </div>
+                  </div>
+                  <div id="flowing-conversations">
+                      
+                          <h3>Flowing Conversations
+                          </h3>
+                          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+                   have just-in-time loading for a more natural flow.
+                          </p>
+                      
+                  </div>
+                
+               </div>
+
+
+                <div class="content-boxes">
+                    <div class="content-boxes-inner">
+                        
+                            <h3>Your Users
+                            </h3>
+                            <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
+                            This means, once signed in to your app, your users can start chatting immediately.
+                            </p>
+                        
+                    </div>
+                    <div class="w650">
+                        <div style="padding: 50px;">
+                          <img src="images/illustration-your-users.svg">
+                        </div>
+                    </div>
+
+                </div>
 
         
 
     </content>
 
-    <div style="box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; width: 730px;text-align: center;padding: 60px; position: relative;left: 285px;top: 90px;background-color: white;">
+    <div id="bottomcalltoaction">
           <h1 style="margin-bottom: 30px;">Ready To Build Your Community?</h1>
           <div ><a href="#" class="getStarted">Get Started For Free</a></div>
-        </div>
+    </div>
 
 
     <footer>
-      <h1><i class="far fa-comment-dots"></i>Huddle</h1>
-      <div id="contacts" style="padding: 150px 100px 50px 100px; display: flex;height: 200px;">
-        <div style="flex:1;display: flex; flex-direction: column;justify-content: space-between;">
-          <div><i class="fas fa-map-marker-alt"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua</div>
-          <div><i class="fas fa-phone-volume"></i>+1-543-123-4567</div>
-          <div><i class="fas fa-envelope"></i>example@huddle.com</div>
+      <h1 style="padding: 180px 0 40px 100px;"><i class="far fa-comment-dots"></i> Huddle</h1>
+      <div class="contacts d-flex" style="padding: 0px 100px 50px 100px;height: 200px;">
+        <div id="ourinfo">
+          <p style="padding-right: 100px;"><i class="fas fa-map-marker-alt"></i>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+  incididunt ut labore et dolore magna aliqua</p>
+          <p><i class="fas fa-phone-volume"></i>    +1-543-123-4567</p>
+          <p><i class="fas fa-envelope"></i>    example@huddle.com</p>
+        </div>
+        <div class="links">
+          <p><a href="">About Us</a></p>
+          <p><a href="">What We Do</a></p>
+          <p><a href="">FAQ</a></p>
+        </div>
+        <div class="links">
+          <p><a href="">Career</a></p>
+          <p><a href="">Blog</a></p>
+          <p><a href="">Contact Us</a></p>
         </div>
         <div style="flex: 1;">
-          <div><a href="">About Us</a></div>
-          <div><a href="">What We Do</a></div>
-          <div><a href="">FAQ</a></div>
-        </div>
-        <div style="flex:1;">
-          <div><a href="">Career</a></div>
-          <div><a href="">Blog</a></div>
-          <div><a href="">Contact Us</a></div>
-        </div>
-        <div style="flex: 1;">
-          <div><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></div>
+          <div class="socialmedia"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></div>
           
         </div>
       </div>
-      <div>&copy; Copyright 2018 Huddle. All rights reserved.</div>
+      <div class="copyright">&copy; Copyright 2018 Huddle. All rights reserved.</div>
       
       <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Obodo David</a>.
       </p>
     </footer>
 
