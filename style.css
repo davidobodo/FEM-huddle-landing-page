@@ -1,0 +1,251 @@
+*{
+      margin:0;
+      padding: 0;
+
+    }
+ 
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    #wrapper{
+      width: 1440px;
+      margin: 0 auto;
+    }
+
+    header{
+      background-color: hsl(193, 100%, 96%);
+      background-image: url("images/bg-hero-desktop.svg");
+    }
+
+    
+
+    header div a {
+      cursor: pointer;
+      padding:0.8em 1em;
+      font-weight: 700;
+      border-radius: 300px;
+      display: inline-block;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #fff;
+      text-decoration: none;
+      width: 150px;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+      font-family: "Open Sans";
+    }
+
+    #header_inner{
+      padding:70px;
+    }
+
+    a.getStarted {
+      cursor: pointer;
+      padding:1em 1.3em;
+      font-weight: 700;
+      border-radius: 300px;
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      background-color: hsl(322, 100%, 66%);
+      text-decoration: none;
+      width: 150px;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+      font-family: 'Open Sans', sans-serif;
+      width: 250px;
+    }
+
+    .headerinfo{
+      padding-top: 95px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 650px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    header img{
+      /*! width: 650px; */
+    }
+
+    p{
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      color: hsl(208, 11%, 55%);
+    }
+
+    h1, h3{font-family: 'Poppins', sans-serif;}
+
+    h3{
+      color: #0a303d;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    content{
+      display: flex;margin: 150px 70px 30px 70px;flex-direction:column;
+    }
+
+    footer{
+      background-color: hsl(192, 100%, 9%);
+      color: white;
+    }
+
+    footer p{color: #fff;}
+
+    footer a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .d-flex{
+      display: flex;
+    }
+
+    .content-boxes{
+      display: flex;box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; margin-bottom: 50px;
+    }
+
+    .content-boxes-inner{
+      width: 650px;display: flex;flex-direction: column;
+                justify-content: center;padding:100px;
+    }
+
+    .j-content-btw{
+      justify-content: space-between;
+    }
+
+    .flowing-conversations{
+      width: 650px;display: flex;flex-direction: column;
+                  justify-content: center;padding:100px 50px 100px 220px;
+    }
+
+    .bcta{
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);border-radius:10px; width: 50%;text-align: center;padding: 60px; position: relative;left: 285px;top: 90px;background-color: white;
+    }
+
+    .links{
+      flex: 1; display: flex;
+        flex-direction: column;height: 130px;justify-content: space-between;
+    }
+
+    #ourinfo{
+      flex:2;display: flex; flex-direction: column;justify-content: space-between;
+    }
+
+    .socialmedia{
+      display: flex;justify-content: space-around;padding: 0 70px;
+    }
+
+    .copyright{
+      display: flex; justify-content: flex-end;margin:0 80px 80px 0
+    }
+
+    .w650{
+      width: 650;
+    }
+
+    .img2a{
+      padding: 50px;
+    }
+
+    .img3a{
+      padding: 50px 0 50px 100px;
+    }
+
+    .lorem{
+      padding-right: 100px;
+    }
+
+    .contacts{
+      padding: 0px 100px 0px 100px;height: 200px;
+    }
+
+@media only screen and (max-width: 705px){
+
+
+
+      #wrapper{
+        width: 600px;
+      }
+      .headerinfoparent{
+        flex-direction: column;
+      }
+
+      .headerinfo{
+        width: auto;
+        height: 400px;
+        text-align: center;
+        margin-bottom: 80px;
+      }
+
+      header img{
+       width: 100%;
+      }
+
+      .content-boxes{
+        flex-direction: column;
+      }
+
+      .mobileContent{
+        order: 2;
+        width: auto;
+        text-align: center;
+      }
+
+      .mobileContent2{
+        width: auto;
+        text-align: center;
+        padding: 100px;
+      }
+
+      .img2{
+        order: 1;
+      }
+
+      .img3{
+        padding: 50px;
+      }
+
+      .mobilebcta{
+        width: 70%;
+        margin: auto;
+        left: 0;
+      }
+
+      .contacts{
+        flex-direction: column;
+        height: auto;
+      }
+
+      #ourinfo{
+        min-height: 170px;
+      }
+
+      .lorem{
+        padding: 0;
+        line-height: 1.5em;
+      }
+
+      .links{
+        min-height: 100px;
+        margin-top: 30px;
+      }
+
+      .socialmedia{
+        margin: 50px;
+      }
+
+      .copyright{
+        justify-content: center;
+        margin: 0;
+      }
+
+      .attribution{
+        padding: 30px;
+      }
+    }
